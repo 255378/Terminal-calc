@@ -27,6 +27,19 @@ int main(int argc, char *argv[]) {
             result = a - b;
             printf("%d - %d = %d\n", a, b, result);
             break;
+        case '*':
+            result = a * b;
+            printf("%d * %d = %d\n", a, b, result);
+            break;
+        case '/':
+            if (b == 0) {
+                printf("Błąd: dzielenie przez zero!\n");
+                return 1;
+            }
+            result = a / b;
+            printf("%d / %d = %d\n", a, b, result);
+            break;
+
         default:
             usage(argv[0]);
     }
