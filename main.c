@@ -4,7 +4,7 @@
 
 void usage(char *program_name) {
     printf("Użycie: %s <liczba1> <operacja> <liczba2>\n", program_name);
-    printf("Dostępne operacje: + -\n");
+    printf("Dostępne operacje: + - / m \n");
     exit(1);
 }
 
@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
             result = a - b;
             printf("%d - %d = %d\n", a, b, result);
             break;
-        case '*':
+        case 'm':
             result = a * b;
             printf("%d * %d = %d\n", a, b, result);
             break;
